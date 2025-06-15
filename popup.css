@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background: #f4f4f9;
+  color: #333;
+}
+h1 {
+  color: #8e44ad;
+}
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.color-options button {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #e67e22;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#remove-highlights {
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #e67e22;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.toggle input {
+  display: none;
+}
+.toggle .slider {
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+.toggle .slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s;
+}
+.toggle input:checked + .slider::before {
+  transform: translateX(20px);
+}
+.toggle input:checked + .slider {
+  background-color: #8e44ad;
+}
+.toggle .label {
+  font-size: 14px;
+}

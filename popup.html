@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Highlight Tool</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>Text Highlighter</h1>
+
+  <label class="toggle">
+    <input type="checkbox" id="toggle-mode" />
+    <span class="slider"></span>
+    <span class="label">Active Mode</span>
+  </label>
+
+  <div class="color-options">
+    <button data-color="yellow" style="background-color: yellow;"></button>
+    <button data-color="lightgreen" style="background-color: lightgreen;"></button>
+    <button data-color="pink" style="background-color: pink;"></button>
+  </div>
+
+  <button id="remove-highlights">Remove Highlights</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
